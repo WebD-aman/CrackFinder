@@ -1,27 +1,27 @@
-# Python
+# Python cache and test output
 __pycache__/
 *.py[cod]
-*$py.class
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
 .coverage
 htmlcov/
 
 # Virtual environments
 .venv/
 venv/
-venv*/
+venv310/
 backend/.venv/
 backend/venv/
-backend/venv*/
+backend/venv310/
 
-# Flask / local environment
+# Local environment files
 .env
 .env.*
-instance/
+frontend/.env
+frontend/.env.*
+backend/.env
+backend/.env.*
 
-# Frontend dependencies and build output
+# Frontend dependencies and builds
 node_modules/
 frontend/node_modules/
 frontend/dist/
@@ -31,22 +31,19 @@ yarn-debug.log*
 yarn-error.log*
 pnpm-debug.log*
 
-# User uploads and generated data
+# Runtime uploads and training data
 backend/uploads/
 dataset/
 
-# Trained models and checkpoints
+# Trained models and ML checkpoints
 *.keras
 *.h5
 *.hdf5
 *.ckpt
-*.pth
-*.pt
 backend/model/*
 !backend/model/.gitkeep
 
-# OS / editor files
+# OS and editor files
 .DS_Store
 Thumbs.db
-.vscode/
 .idea/
