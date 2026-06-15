@@ -36,12 +36,13 @@ backend/uploads/
 dataset/
 
 # Trained models and ML checkpoints
-*.keras
 *.h5
 *.hdf5
 *.ckpt
+
 backend/model/*
 !backend/model/.gitkeep
+!backend/model/crack_model.keras
 
 # OS and editor files
 .DS_Store
